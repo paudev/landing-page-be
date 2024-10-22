@@ -9,7 +9,7 @@ a simple backend for nectar landing page
 |   /api/characters   |  GET   |   Fetch characters    |
 | /api/character/{id} |  GET   | Fetch character by id |
 |   /api/fantasies    |  GET   |    Fetch fantasies    |
-|  /api/fantasy/{id}  | DELETE |  Fetch fantasy by ID  |
+|  /api/fantasy/{id}  |  GET   |  Fetch fantasy by ID  |
 
 ## Environment Variables
 
