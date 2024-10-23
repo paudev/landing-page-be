@@ -8,7 +8,6 @@ import (
 	"strconv"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/joho/godotenv"
 	"github.com/paudev/landing-page-be/models"
 	"github.com/paudev/landing-page-be/storage"
 	"gorm.io/gorm"
@@ -122,10 +121,6 @@ func (r *Repository) SetupRoutes(app *fiber.App) {
 }
 
 func main() {
-	err := godotenv.Load(".env")
-	if err != nil {
-		log.Fatal(err)
-	}
 
 	config := &storage.Config{
 		Host:     os.Getenv("DB_HOST"),
